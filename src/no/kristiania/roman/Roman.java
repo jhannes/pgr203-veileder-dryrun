@@ -2,21 +2,23 @@ package no.kristiania.roman;
 
 public class Roman {
     public static String convert(int number) {
-        String result = "";
+        StringBuilder result = new StringBuilder();
 
-        if (number >= 5) {
-            result += "V";
-            number -= 5;
-        }
-        if (number >= 4) {
-            result += "IV";
-            number -= 4;
-        }
-
+        number = convertDigit(number, result, 9, "IX");
+        number = convertDigit(number, result, 5, "V");
+        number = convertDigit(number, result, 4, "IV");
         for (int i = 0; i < number; i++) {
-            result += "I";
+            result.append("I");
         }
 
-        return result;
+        return result.toString();
+    }
+
+    private static int convertDigit(int number, StringBuilder result, int digitValue, String digitSymbol) {
+        if (number >= digitValue) {
+            result.append(digitSymbol);
+            number -= digitValue;
+        }
+        return number;
     }
 }
