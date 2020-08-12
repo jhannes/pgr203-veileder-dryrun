@@ -16,7 +16,7 @@ public class Roman {
         number = convertDigit(number, result, 9, "IX");
         number = convertDigit(number, result, 5, "V");
         number = convertDigit(number, result, 4, "IV");
-        number = convertDigit(number, result, 1, "I");
+        convertDigit(number, result, 1, "I");
 
         return result.toString();
     }
