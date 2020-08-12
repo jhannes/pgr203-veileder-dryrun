@@ -22,11 +22,6 @@ public class RomanTest {
     }
 
     @Test
-    void shouldReturnIVforFour() {
-        assertEquals("IV", Roman.convert(4));
-    }
-
-    @Test
     void shouldReturnVforFive() {
         assertEquals("V", Roman.convert(5));
     }
@@ -62,8 +57,13 @@ public class RomanTest {
     }
 
     @Test
-    void shouldReturnCDXLfor440() {
-        assertEquals("CDXL", Roman.convert(440));
+    void shouldReturnCDXLIVfor444() {
+        assertEquals("CDXLIV", Roman.convert(444));
+    }
+
+    @Test
+    void shouldReturnMMCMXCIXfor2444() {
+        assertEquals("MMCMXCIX", Roman.convert(2999));
     }
 
     @Test
