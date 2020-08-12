@@ -35,4 +35,9 @@ public class RomanTest {
     void shouldReturnVIforSix() {
         assertEquals("VI", Roman.convert(6));
     }
+
+    @Test
+    void shouldReturIXforNine() {
+        assertEquals("IX", Roman.convert(9));
+    }
 }

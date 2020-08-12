@@ -4,13 +4,13 @@ public class Roman {
     public static String convert(int number) {
         String result = "";
 
-        if (number == 5) {
+        if (number >= 5) {
             result += "V";
-            number = 0;
+            number -= 5;
         }
-        if (number == 4) {
+        if (number >= 4) {
             result += "IV";
-            number = 0;
+            number -= 4;
         }
 
         for (int i = 0; i < number; i++) {
