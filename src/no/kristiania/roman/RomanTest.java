@@ -37,22 +37,32 @@ public class RomanTest {
     }
 
     @Test
-    void shouldReturIXforNine() {
+    void shouldReturnIXforNine() {
         assertEquals("IX", Roman.convert(9));
     }
 
     @Test
-    void shouldReturXforTen() {
+    void shouldReturnXforTen() {
         assertEquals("X", Roman.convert(10));
     }
 
     @Test
-    void shouldReturXIVfor14() {
+    void shouldReturnXIVfor14() {
         assertEquals("XIV", Roman.convert(14));
     }
 
     @Test
-    void shouldReturXXfor20() {
+    void shouldReturnXXfor20() {
         assertEquals("XX", Roman.convert(20));
+    }
+
+    @Test
+    void shouldReturnXXXVIIIfor38() {
+        assertEquals("XXXVIII", Roman.convert(38));
+    }
+
+    @Test
+    void shouldReturnCDXLfor440() {
+        assertEquals("CDXL", Roman.convert(440));
     }
 }

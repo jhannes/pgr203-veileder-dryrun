@@ -16,7 +16,7 @@ public class Roman {
     }
 
     private static int convertDigit(int number, StringBuilder result, int digitValue, String digitSymbol) {
-        if (number >= digitValue) {
+        while (number >= digitValue) {
             result.append(digitSymbol);
             number -= digitValue;
         }
