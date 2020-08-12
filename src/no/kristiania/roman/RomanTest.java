@@ -10,4 +10,9 @@ public class RomanTest {
     void shouldReturnIforOne() {
         assertEquals("I", Roman.convert(1));
     }
+
+    @Test
+    void shouldReturnIIforTwo() {
+        assertEquals("II", Roman.convert(2));
+    }
 }
