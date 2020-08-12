@@ -45,4 +45,14 @@ public class RomanTest {
     void shouldReturXforTen() {
         assertEquals("X", Roman.convert(10));
     }
+
+    @Test
+    void shouldReturXIVfor14() {
+        assertEquals("XIV", Roman.convert(14));
+    }
+
+    @Test
+    void shouldReturXXfor20() {
+        assertEquals("XX", Roman.convert(20));
+    }
 }
