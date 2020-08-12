@@ -4,13 +4,13 @@ public class Roman {
     public static String convert(int number) {
         StringBuilder result = new StringBuilder();
 
+        number = convertDigit(number, result, 400, "CD");
+        number = convertDigit(number, result, 40, "XL");
         number = convertDigit(number, result, 10, "X");
         number = convertDigit(number, result, 9, "IX");
         number = convertDigit(number, result, 5, "V");
         number = convertDigit(number, result, 4, "IV");
-        for (int i = 0; i < number; i++) {
-            result.append("I");
-        }
+        number = convertDigit(number, result, 1, "I");
 
         return result.toString();
     }
