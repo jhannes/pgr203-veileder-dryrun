@@ -67,7 +67,7 @@ public class RomanTest {
     }
 
     @Test
-    void shouldReturnMMDLIIIfor2553() {
-        assertEquals("MMDLIII", Roman.convert(2553));
+    void shouldReturnMMDCLIIIfor2653() {
+        assertEquals("MMDCLIII", Roman.convert(2653));
     }
 }

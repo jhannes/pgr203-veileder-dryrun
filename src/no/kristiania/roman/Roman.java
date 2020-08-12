@@ -5,8 +5,10 @@ public class Roman {
         StringBuilder result = new StringBuilder();
 
         number = convertDigit(number, result, 1000, "M");
+        number = convertDigit(number, result, 900, "CM");
         number = convertDigit(number, result, 500, "D");
         number = convertDigit(number, result, 400, "CD");
+        number = convertDigit(number, result, 90, "XC");
         number = convertDigit(number, result, 50, "L");
         number = convertDigit(number, result, 40, "XL");
         number = convertDigit(number, result, 10, "X");
