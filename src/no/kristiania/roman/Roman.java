@@ -8,6 +8,7 @@ public class Roman {
         number = convertDigit(number, result, 900, "CM");
         number = convertDigit(number, result, 500, "D");
         number = convertDigit(number, result, 400, "CD");
+        number = convertDigit(number, result, 100, "C");
         number = convertDigit(number, result, 90, "XC");
         number = convertDigit(number, result, 50, "L");
         number = convertDigit(number, result, 40, "XL");
