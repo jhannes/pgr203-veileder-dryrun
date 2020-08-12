@@ -25,4 +25,9 @@ public class RomanTest {
     void shouldReturnIVforFour() {
         assertEquals("IV", Roman.convert(4));
     }
+
+    @Test
+    void shouldReturnVforFive() {
+        assertEquals("V", Roman.convert(5));
+    }
 }
